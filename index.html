@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO / social -->
+  <title>GURU — Transferencia de conocimiento y onboarding automatizado para RRHH</title>
+  <meta name="description" content="GURU convierte la experiencia de tu equipo en un activo permanente: automatiza el onboarding, reduce la curva de aprendizaje y elimina el riesgo por fuga de talentos.">
+  <meta name="theme-color" content="#0c111b">
+  <link rel="canonical" href="https://landing-page.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://landing-page.pages.dev/">
+  <meta property="og:title" content="GURU — Conocimiento organizacional, estructurado y transferido sin esfuerzo">
+  <meta property="og:description" content="Automatiza el onboarding, preserva el conocimiento clave y democratiza el talento dentro de tu organización.">
+  <meta property="og:image" content="https://landing-page.pages.dev/assets/guru-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GURU — Transferencia de conocimiento para RRHH">
+  <meta name="twitter:description" content="Automatiza el onboarding, preserva el conocimiento clave y democratiza el talento.">
+  <meta name="twitter:image" content="https://landing-page.pages.dev/assets/guru-logo.png">
+  <link rel="icon" href="assets/guru-logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- Sticky header -->
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__inner">
+      <span class="logo-chip logo-chip--sm">
+        <img src="assets/guru-logo.png" alt="GURU" width="88" height="26">
+      </span>
+      <a class="btn btn--primary btn--sm" href="#demo">Contáctanos</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. HERO -->
+    <section class="hero section--dark" aria-labelledby="hero-title">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="aurora" aria-hidden="true">
+        <span class="aurora__blob aurora__blob--1"></span>
+        <span class="aurora__blob aurora__blob--2"></span>
+        <span class="aurora__blob aurora__blob--3"></span>
+      </div>
+      <div class="grid-overlay" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__logo">
+          <span class="logo-chip">
+            <img src="assets/guru-logo.png" alt="GURU" width="120" height="36">
+          </span>
+        </div>
+
+        <div class="hero__copy">
+          <span class="eyebrow eyebrow--dark">
+            <span class="eyebrow__dot"></span>
+            Plataforma de conocimiento organizacional
+          </span>
+          <h1 class="hero__title" id="hero-title">
+            Todo el conocimiento de tu organización, estructurado y transferido
+            <span class="text-gradient">sin esfuerzo.</span>
+          </h1>
+          <p class="hero__subtitle">
+            Convierte la experiencia de tu equipo en un activo permanente. Automatiza el
+            onboarding de personal, reduce la curva de aprendizaje y elimina el riesgo por
+            fuga de talentos.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--pulse" href="#demo">Agendar Demo Gratis</a>
+            <a class="btn btn--ghost" href="#modulos">Ver la plataforma</a>
+          </div>
+
+          <ul class="hero__stats" aria-label="Resultados clave">
+            <li class="hero__stat">
+              <span class="hero__stat-num text-gradient">−70%</span>
+              <span class="hero__stat-label">tiempo de onboarding</span>
+            </li>
+            <li class="hero__stat">
+              <span class="hero__stat-num text-gradient">2×</span>
+              <span class="hero__stat-label">más rápido a productividad</span>
+            </li>
+            <li class="hero__stat">
+              <span class="hero__stat-num text-gradient">100%</span>
+              <span class="hero__stat-label">autogestionado</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mockup card -->
+        <div class="mockup" role="img"
+             aria-label="Ruta de inducción para nuevo ingreso: 2 de 4 pasos completados, 72% de progreso general.">
+          <span class="mockup__badge">−70% tiempo de onboarding</span>
+
+          <div class="mockup__head">
+            <span class="dot"></span>
+            <span class="mockup__head-label">Ruta de inducción — Nuevo ingreso</span>
+          </div>
+
+          <ul class="mockup__steps">
+            <li class="mockup__step">
+              <span class="marker marker--done">✓</span>
+              <span>Bienvenida y cultura organizacional</span>
+            </li>
+            <li class="mockup__step">
+              <span class="marker marker--done">✓</span>
+              <span>Herramientas y accesos del equipo</span>
+            </li>
+            <li class="mockup__step">
+              <span class="marker">3</span>
+              <span>Procesos clave del puesto</span>
+            </li>
+            <li class="mockup__step">
+              <span class="marker">4</span>
+              <span>Evaluación de conocimientos</span>
+            </li>
+          </ul>
+
+          <div class="mockup__progress">
+            <div class="mockup__progress-head">
+              <span>Progreso general</span>
+              <span class="mockup__progress-value" id="progressValue">0%</span>
+            </div>
+            <div class="progressbar">
+              <div class="progressbar__fill" id="progressBar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. LOGO BAR -->
+    <section class="logos" aria-label="Empresas que confían en GURU">
+      <p class="logos__intro">
+        Líderes de gestión humana en empresas de alto crecimiento confían en GURU para guiar
+        a sus equipos:
+      </p>
+      <ul class="logos__row">
+        <li class="logo-pill">EMPRESA A</li>
+        <li class="logo-pill">EMPRESA B</li>
+        <li class="logo-pill">EMPRESA C</li>
+        <li class="logo-pill">EMPRESA D</li>
+        <li class="logo-pill">EMPRESA E</li>
+      </ul>
+    </section>
+
+    <!-- 3. PAIN vs SOLUTION -->
+    <section class="pain" aria-labelledby="pain-title">
+      <span class="eyebrow">El contraste</span>
+      <h2 class="section-title" id="pain-title">El desafío tradicional en RRHH vs. el enfoque GURU</h2>
+      <p class="section-sub">Cómo GURU resuelve, de manera ágil, los problemas reales que enfrentan las áreas de Recursos Humanos.</p>
+
+      <div class="compare">
+        <div class="compare__col-head compare__col-head--problem">
+          <span class="pill pill--muted">Desafío tradicional</span>
+        </div>
+        <div class="compare__col-head compare__col-head--solution">
+          <span class="pill pill--accent">Enfoque GURU</span>
+        </div>
+
+        <div class="compare__cell compare__cell--problem reveal">
+          <span class="mark mark--x" aria-hidden="true">✕</span>
+          <p>Onboardings eternos y repetitivos: los líderes de área pierden valiosas horas de trabajo repitiendo los mismos procesos de inducción una y otra vez ante cada nuevo ingreso.</p>
+        </div>
+        <div class="compare__cell compare__cell--solution reveal">
+          <span class="mark mark--check" aria-hidden="true">✓</span>
+          <p>Inducción instantánea y autónoma: los nuevos empleados acceden a rutas guiadas de conocimiento estructurado que se completan con total autonomía.</p>
+        </div>
+
+        <div class="compare__cell compare__cell--problem reveal">
+          <span class="mark mark--x" aria-hidden="true">✕</span>
+          <p>Fuga de conocimiento (Brain Drain): cuando un colaborador clave renuncia, toda su experiencia, métodos y conocimientos clave se marchan con él.</p>
+        </div>
+        <div class="compare__cell compare__cell--solution reveal">
+          <span class="mark mark--check" aria-hidden="true">✓</span>
+          <p>Activo intelectual permanente: GURU captura la esencia de los roles de manera dinámica e interactiva antes de que la persona deje la empresa.</p>
+        </div>
+
+        <div class="compare__cell compare__cell--problem reveal">
+          <span class="mark mark--x" aria-hidden="true">✕</span>
+          <p>Manuales obsoletos que nadie lee: los PDFs de capacitación archivados en carpetas compartidas quedan desactualizados rápidamente y son difíciles de consultar.</p>
+        </div>
+        <div class="compare__cell compare__cell--solution reveal">
+          <span class="mark mark--check" aria-hidden="true">✓</span>
+          <p>Búsqueda e interacción dinámica: el conocimiento se fragmenta y organiza de forma interactiva para ser consultado exactamente en el momento de la necesidad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. MODULES -->
+    <section class="modules" id="modulos" aria-labelledby="modules-title">
+      <span class="eyebrow">La plataforma</span>
+      <h2 class="section-title" id="modules-title">Módulos de la plataforma</h2>
+      <p class="section-sub">Cuatro piezas que trabajan juntas para capturar, estructurar y transferir el conocimiento de tu equipo.</p>
+      <div class="modules__grid">
+        <article class="module reveal">
+          <span class="module__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 8-8c2.5-.5 5 0 5 0s.5 2.5 0 5a22 22 0 0 1-8 8z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+          </span>
+          <span class="module__num">01</span>
+          <h3 class="module__title">Onboarding Automatizado</h3>
+          <p class="module__desc">Diseña flujos de aprendizaje interactivos para nuevos ingresos. El sistema genera de forma autónoma los módulos educativos basados en tus documentos reales.</p>
+        </article>
+        <article class="module reveal">
+          <span class="module__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8"/><path d="M8 17h5"/></svg>
+          </span>
+          <span class="module__num">02</span>
+          <h3 class="module__title">Manuales de Puesto Dinámicos</h3>
+          <p class="module__desc">Crea y mantiene actualizadas las guías de funciones de cada puesto en un formato interactivo. Olvídate de redactar pesados manuales de cientos de páginas.</p>
+        </article>
+        <article class="module reveal">
+          <span class="module__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M9.5 9a2.5 2.5 0 0 1 4.6 1.2c0 1.5-2.1 2-2.1 2"/><path d="M12 14.5h.01"/></svg>
+          </span>
+          <span class="module__num">03</span>
+          <h3 class="module__title">Base de Respuestas e Inducción</h3>
+          <p class="module__desc">Permite que tu equipo acceda a guías de solución de problemas internos de manera instantánea, sin saturar de preguntas a los líderes técnicos del equipo.</p>
+        </article>
+        <article class="module reveal">
+          <span class="module__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+          </span>
+          <span class="module__num">04</span>
+          <h3 class="module__title">Desvinculación sin Pérdidas (Offboarding)</h3>
+          <p class="module__desc">Un proceso guiado de salida que asiste al empleado saliente a vaciar y estructurar su rutina diaria y pendientes de forma rápida y efectiva.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. PROCESS -->
+    <section class="process section--dark" aria-labelledby="process-title">
+      <div class="aurora aurora--soft" aria-hidden="true">
+        <span class="aurora__blob aurora__blob--2"></span>
+      </div>
+      <span class="eyebrow eyebrow--dark">Cómo funciona</span>
+      <h2 class="section-title section-title--light" id="process-title">El proceso GURU en 3 pasos</h2>
+      <div class="process__grid">
+        <div class="process__line" id="processLine" aria-hidden="true"></div>
+
+        <div class="step">
+          <span class="step__num">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+          </span>
+          <h3 class="step__title">Sube la información existente</h3>
+          <p class="step__desc">Sube tus notas desordenadas, audios, antiguos PDFs, videos de Zoom o grabaciones operativas de tu equipo.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 4.3 4.6.5-3.5 3 1 4.6L12 13l-4 2.4 1-4.6-3.5-3 4.6-.5z"/><path d="M19 15l.7 1.6 1.8.2-1.4 1.2.4 1.8L19 19l-1.5.8.4-1.8-1.4-1.2 1.8-.2z"/></svg>
+          </span>
+          <h3 class="step__title">GURU procesa y organiza</h3>
+          <p class="step__desc">La plataforma clasifica, organiza y estructura de manera lógica toda la información, convirtiéndola en guías interactivas de lectura ágil.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          <h3 class="step__title">Transferencia activa</h3>
+          <p class="step__desc">Los miembros del equipo acceden a los módulos, completan sus entrenamientos y consultan dudas de manera fluida y autogestionada.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ -->
+    <section class="faq" aria-labelledby="faq-title">
+      <span class="eyebrow">Dudas frecuentes</span>
+      <h2 class="section-title" id="faq-title">Preguntas frecuentes</h2>
+      <div class="faq__list">
+
+        <div class="faq__item reveal">
+          <h3 class="faq__q-wrap">
+            <button class="faq__q" id="faq-q1" aria-expanded="true" aria-controls="faq-a1">
+              <span>¿Es necesario redactar los manuales desde cero para alimentar la plataforma?</span>
+              <span class="faq__sign" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faq-a1" role="region" aria-labelledby="faq-q1">
+            <div class="faq__answer">No. GURU está diseñado para recopilar información existente de múltiples formatos (grabaciones, notas rápidas, chats, correos o videos de reuniones) y estructurarlos de forma automática en un portal interactivo y ordenado.</div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <h3 class="faq__q-wrap">
+            <button class="faq__q" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">
+              <span>¿Cómo protege GURU la seguridad y confidencialidad del conocimiento interno?</span>
+              <span class="faq__sign" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faq-a2" role="region" aria-labelledby="faq-q2">
+            <div class="faq__answer">La seguridad de tu propiedad intelectual es nuestra máxima prioridad. GURU implementa protocolos de encriptación de grado bancario y cumple con los estándares más estrictos de protección de datos empresariales. Tu información técnica y operativa es de uso exclusivo para tu empresa.</div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <h3 class="faq__q-wrap">
+            <button class="faq__q" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">
+              <span>¿Cuánto tiempo se ahorra el departamento de Recursos Humanos en la inducción de personal?</span>
+              <span class="faq__sign" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faq-a3" role="region" aria-labelledby="faq-q3">
+            <div class="faq__answer">En promedio, las empresas que implementan GURU logran reducir hasta un 70% el tiempo invertido en inducciones repetitivas, logrando que los nuevos colaboradores alcancen su máxima productividad de forma independiente en la mitad del tiempo habitual.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. CONTACT / DEMO REQUEST -->
+    <section class="contact section--dark" id="demo" aria-labelledby="contact-title">
+      <div class="aurora" aria-hidden="true">
+        <span class="aurora__blob aurora__blob--1"></span>
+        <span class="aurora__blob aurora__blob--3"></span>
+      </div>
+
+      <div class="contact__inner">
+        <div class="contact__intro">
+          <span class="eyebrow eyebrow--dark">Hablemos</span>
+          <h2 class="section-title section-title--light" id="contact-title">
+            Empieza hoy a asegurar y democratizar el talento <span class="text-gradient">de tu organización.</span>
+          </h2>
+          <p class="contact__sub">Nos encantará contactarte para hablar de GURU. Te respondemos en menos de 24&nbsp;horas.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm"
+              action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="fc6cd99a-7de1-457c-8cdd-c7361af98f3b">
+          <input type="hidden" name="subject" value="Nueva solicitud de demo — GURU Landing">
+          <input type="hidden" name="from_name" value="GURU Landing">
+          <!-- honeypot: bots fill this, humans never see it -->
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="field">
+            <label for="cf-name">Nombre</label>
+            <input id="cf-name" name="name" type="text" required autocomplete="name" placeholder="Tu nombre">
+          </div>
+          <div class="field">
+            <label for="cf-email">Email corporativo</label>
+            <input id="cf-email" name="email" type="email" required autocomplete="email" placeholder="tu@empresa.com">
+          </div>
+          <div class="field">
+            <label for="cf-message">Mensaje</label>
+            <textarea id="cf-message" name="message" rows="4" required placeholder="Cuéntanos sobre tu equipo…"></textarea>
+          </div>
+
+          <button class="btn btn--light contact-form__submit" type="submit">Enviar</button>
+          <p class="contact-form__status" id="contactStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="logo-chip logo-chip--sm">
+          <img src="assets/guru-logo.png" alt="GURU" width="88" height="26">
+        </span>
+        <p class="site-footer__tagline">Conocimiento organizacional, estructurado y transferido sin esfuerzo.</p>
+      </div>
+      <nav class="site-footer__links" aria-label="Enlaces del pie de página">
+        <a href="#modulos">Plataforma</a>
+        <a href="#demo">Agendar demo</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+      </nav>
+      <p class="site-footer__copy">© 2026 GURU. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

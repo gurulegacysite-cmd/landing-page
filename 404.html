@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página no encontrada — GURU</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/assets/guru-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      font-family: 'Inter', system-ui, sans-serif; text-align: center; padding: 24px;
+      color: #f8fafc;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, #1a2236 0%, #0c111b 55%, #0a0e17 100%);
+    }
+    .box { max-width: 480px; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+    .chip { background: #f8fafc; border-radius: 12px; padding: 9px 16px; display: inline-flex; }
+    .chip img { height: 30px; width: auto; display: block; }
+    .code {
+      font: 800 clamp(64px, 16vw, 120px)/1 'Plus Jakarta Sans', sans-serif; letter-spacing: -0.04em;
+      background: linear-gradient(120deg, #ff6aa3, #e60067 60%, #ff4d8d);
+      -webkit-background-clip: text; background-clip: text; color: transparent; margin: 0;
+    }
+    h1 { font: 700 clamp(20px, 4vw, 26px) 'Plus Jakarta Sans', sans-serif; letter-spacing: -0.02em; margin: 0; }
+    p { font-size: 16px; line-height: 1.6; color: #9aa7bd; margin: 0; }
+    .btn {
+      display: inline-block; margin-top: 8px; text-decoration: none;
+      font: 600 16px 'Plus Jakarta Sans', sans-serif; color: #fff;
+      background: linear-gradient(135deg, #ff4d8d 0%, #e60067 55%, #c2005a 100%);
+      padding: 14px 30px; border-radius: 10px;
+      box-shadow: 0 10px 30px -8px rgba(230, 0, 103, .6);
+      transition: transform .18s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <span class="chip"><img src="/assets/guru-logo.png" alt="GURU"></span>
+    <p class="code">404</p>
+    <h1>Página no encontrada</h1>
+    <p>La página que buscas no existe o fue movida. Volvamos al inicio.</p>
+    <a class="btn" href="/">Ir al inicio</a>
+  </div>
+</body>
+</html>
